@@ -1,0 +1,51 @@
+html {
+	overflow: hidden;
+	background-color: midnightblue;
+}
+
+.Opponent, .Boss {
+	animation: rotation 3s infinite linear;
+	-webkit-animation: rotation 3s infinite linear;
+}
+
+.paused .Opponent, 
+.paused .Boss {
+	animation: none;
+	-webkit-animation: none;
+}
+
+@-webkit-keyframes rotation {
+	from {
+		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(359deg);
+		-webkit-transform: rotate(359deg);
+	}
+}
+
+.gamebutton {
+	border: none;
+	background: #ddd;
+	color: #333;
+	padding: 10px 20px;
+	outline: none;
+	font-family: monospace;
+	cursor: pointer;
+}
+
+.marcadores li {
+	display: inline;
+	/* background-color: #ddd; */
+	color: orange;
+	padding: 10px 10px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+.marcadores ul {
+	list-style-type: none;
+	margin: .8rem 0;
+	padding: 0;
+}
